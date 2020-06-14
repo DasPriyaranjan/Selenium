@@ -14,15 +14,26 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<!-- Plug-ins required for executing Tests -->
+	<build>
+		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<forkMode>never</forkMode>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>3.8.1</version>
-</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -33,8 +44,16 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.1.0</version>
-			<scope>test</scope>
+			<version>6.14.3</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.8.1</version>
 		</dependency>
 	</dependencies>
+
+
 </project>
