@@ -5,10 +5,10 @@
     <classes>
       <class name="com.priya.SeleniumDemo.UserManagementTC_002">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyTitile"/>
+          <include name="verifyDeleteUser"/>
+          <include name="verifyAddUser"/>
           <include name="tearDown"/>
-          <include name="verifyLogin"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.priya.SeleniumDemo.UserManagementTC_002 -->
     </classes>
