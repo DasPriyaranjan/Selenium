@@ -29,7 +29,7 @@ public class WebTablesDemo {
 		driver.findElementById("cars").click();
 		driver.findElementByXPath("//*[@id=\"cars\"]/option[4]").click();
 		driver.findElementByCssSelector("html").click();
-		PoonameLover
+		
 	
 
 }
