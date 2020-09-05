@@ -41,8 +41,10 @@ public class UserManagementTC_002 extends TestBase {
 		if (userSearchresult.isDisplayed()) {
 
 			System.out.println("User added successfully");
+
 			Assert.assertTrue(true);
 		} else {
+
 			System.out.println("User not added ");
 			Assert.assertFalse(true);
 		}
